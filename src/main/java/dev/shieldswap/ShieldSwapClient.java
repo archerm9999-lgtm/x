@@ -116,7 +116,7 @@ public class ShieldSwapClient implements ClientModInitializer {
     }
 
     private static void debug(Player player, String message) {
-        if (DEBUG) player.displayClientMessage(Component.literal("[ShieldSwap] " + message), false);
+          if (DEBUG) player.sendSystemMessage(Component.literal("[ShieldSwap] " + message));
     }
 
     private static boolean shieldFacesAttacker(Player attacker, Player target) {
